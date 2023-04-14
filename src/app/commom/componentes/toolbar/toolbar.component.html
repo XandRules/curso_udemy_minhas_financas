@@ -1,0 +1,17 @@
+<mat-toolbar>
+
+    <span>Minhas Finanças</span>
+    <span class="example-spacer"></span>
+
+    <div class="menu-item" *ngFor="let m of menu">
+        <a [routerLink]="m.rota" routerLinkActive="active">{{m.descricao}}</a>
+    </div>
+
+    <!-- <div class="menu-item">
+        <a routerLink="categorias" routerLinkActive="active">Categorias</a>
+    </div>
+
+    <div class="menu-item">
+        <a routerLink="entradas" routerLinkActive="active">Entradas</a> 
+    </div> -->
+</mat-toolbar>

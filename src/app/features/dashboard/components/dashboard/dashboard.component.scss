@@ -1,0 +1,68 @@
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.header {
+    height: 300px;
+}
+
+.title {
+    position: relative;
+    font-size: 3rem;
+    top: 24px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.mat-mdc-card {
+    width: 400px;
+    height: 120px;
+}
+
+.input-item {
+    width: 400px;
+    margin-top: 90px;
+
+}
+
+.card-item {
+    margin-top: 50px;
+    position: relative;
+    top: -130px;
+}
+
+.flex-item {
+    width: 100%;
+    padding: 1.2rem;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.conteudo{
+    font-size: 1.5rem;
+}
+
+.titulo {
+    font-size: 1.6rem;
+    padding: 20px;
+}
+
+.receita {
+    background-color: rgb(75, 179, 75);
+    color: #fff;
+}
+
+.despesa {
+    background-color: rgb(190, 81, 81);
+    color: #fff;
+}
+
+.saldo {
+    background-color: rgb(35, 127, 177);
+    color: #fff;
+}

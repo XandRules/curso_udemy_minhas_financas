@@ -1,0 +1,79 @@
+<h1 class="title" >Minhas Finanças</h1>
+<div class="flex header">
+
+    <div >
+
+        <mat-form-field appearance="fill" class="input-item">
+            <mat-label>Mês</mat-label>
+            <mat-select>
+              <mat-option>Selecione o mês</mat-option>
+              <mat-option *ngFor="let mes of meses" [value]="mes.value">{{mes.viewValue}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+
+    <div >
+        
+        <mat-form-field appearance="fill" class="input-item">
+          <mat-label>Ano</mat-label>
+          <mat-select>
+            <mat-option value="2023" >2023</mat-option>
+          </mat-select>
+        </mat-form-field>
+    </div>
+
+
+</div>
+
+<div class="flex card-item">
+
+    <div class="flex-item">
+
+        <mat-card class="receita">
+            <mat-card-header class="center">
+                <mat-card-title class="titulo">
+                    Receitas
+                </mat-card-title>
+            </mat-card-header>
+        
+            <mat-card-content class="center conteudo">
+                {{receita | currency: 'BRL'}}
+            </mat-card-content>
+        </mat-card>
+        
+    </div>
+
+    <div class="flex-item">
+
+        <mat-card class="despesa">
+            <mat-card-header class="center">
+                <mat-card-title class="titulo">
+                    Despesas
+                </mat-card-title>
+            </mat-card-header>
+        
+            <mat-card-content class="center conteudo">
+                {{despesa | currency: 'BRL'}}
+            </mat-card-content>
+        </mat-card>
+        
+    </div>
+
+    <div class="flex-item">
+
+        <mat-card class="saldo">
+            <mat-card-header class="center">
+                <mat-card-title class="titulo">
+                    Saldo
+                </mat-card-title>
+            </mat-card-header>
+        
+            <mat-card-content class="center conteudo">
+                {{saldo | currency: 'BRL'}}
+            </mat-card-content>
+        </mat-card>
+        
+    </div>
+
+    
+</div>

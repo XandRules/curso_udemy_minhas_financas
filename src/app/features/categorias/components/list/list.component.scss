@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+
