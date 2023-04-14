@@ -1,58 +1,61 @@
-
 <div class="container ">
     <h1 class="center">Cadastro de entradas</h1>
 </div>
 <div class="container flex">
 
+    <form [formGroup]="formEntradas">
 
-    <mat-form-field class="example-form-field">
-        <mat-label>Entrada</mat-label>
-        <input matInput type="text" >
-        <!-- <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-form-field class="example-form-field">
+            <mat-label>Entrada</mat-label>
+            <input matInput type="text" formControlName="nome">
+            <!-- <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
           <mat-icon>close</mat-icon>
         </button> -->
-    </mat-form-field>
+        </mat-form-field>
 
-    <mat-form-field class="example-form-field">
-        <mat-label>Valor</mat-label>
-        <input matInput type="text" >
-        <!-- <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-form-field class="example-form-field">
+            <mat-label>Valor</mat-label>
+            <input matInput type="text" formControlName="valor">
+            <!-- <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
           <mat-icon>close</mat-icon>
         </button> -->
-    </mat-form-field>
-    
-    <mat-form-field appearance="fill">
-        <mat-label>Categoria</mat-label>
-        <mat-select>
-          <mat-option *ngFor="let categoria of categorias" [value]="categoria.id">
-            {{categoria.nome}}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
-    
-      <mat-form-field appearance="fill">
-        <mat-label>Status</mat-label>
-        <mat-select>
-          <mat-option *ngFor="let status of statusDePagamento" [value]="status.value">
-            {{status.descricao}}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
-    
-      <mat-form-field appearance="fill">
-        <mat-label>Tipo</mat-label>
-        <mat-select>
-          <mat-option *ngFor="let tipo of tiposDeEntradas" [value]="tipo">
-            {{tipo}}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
-    
-      <mat-form-field appearance="fill">
-        <mat-label>Data de Pagamento</mat-label>
-        <input matInput [matDatepicker]="picker">
-        <mat-hint>MM/DD/YYYY</mat-hint>
-        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
-      </mat-form-field>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Categoria</mat-label>
+            <mat-select formControlName="categoriaId">
+                <mat-option *ngFor="let categoria of categorias" [value]="categoria.id" >
+                    {{categoria.nome}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Status</mat-label>
+            <mat-select  formControlName="pago">
+                <mat-option *ngFor="let status of statusDePagamento" [value]="status.value">
+                    {{status.descricao}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Tipo</mat-label>
+            <mat-select formControlName="tipo">
+                <mat-option *ngFor="let tipo of tiposDeEntradas" [value]="tipo" >
+                    {{tipo}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Data de Pagamento</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="data">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button color="primary" (click)="salvarEntrada()" >Salvar</button>
 </div>

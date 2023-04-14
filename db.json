@@ -105,49 +105,13 @@
       "tipo": "despesa"
     },
     {
-      "id": 21,
-      "nome": "Video Game",
-      "categoriaId": 2,
+      "nome": "Aluguel",
+      "categoriaId": 1,
+      "data": "14/04/2023",
       "pago": true,
-      "data": "17/04/2023",
-      "valor": 30,
-      "tipo": "despesa"
-    },
-    {
-      "id": 22,
-      "nome": "Cinema",
-      "categoriaId": 3,
-      "pago": true,
-      "data": "18/04/2023",
-      "valor": 15,
-      "tipo": "despesa"
-    },
-    {
-      "id": 23,
-      "nome": "Gasolina",
-      "categoriaId": 2,
-      "pago": false,
-      "data": "21/04/2023",
-      "valor": 130,
-      "tipo": "despesa"
-    },
-    {
-      "id": 44,
-      "nome": "Uber",
-      "categoriaId": 3,
-      "pago": true,
-      "data": "28/04/2023",
-      "valor": 15,
-      "tipo": "despesa"
-    },
-    {
-      "id": 55,
-      "nome": "Cinema",
-      "categoriaId": 2,
-      "pago": false,
-      "data": "28/04/2023",
-      "valor": 30,
-      "tipo": "despesa"
+      "tipo": "Despesa",
+      "valor": "898",
+      "id": 14
     }
   ]
 }
