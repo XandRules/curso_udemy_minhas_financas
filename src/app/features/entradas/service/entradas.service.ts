@@ -20,11 +20,21 @@ export class EntradasService extends HttpBaseService{
 
    }
 
+   getEntradasPeloId(id: number): Observable<any>{
+
+    return this.httpGet(`${this.endpoint}/${id}`);
+
+   }
+
    excluirEntrada(id: number): Observable<any> {
     return this.httpDelete(`${this.endpoint}/${id}`)
    }
 
    criarEntrada(payload: Entrada): Observable<any>{
     return this.httpPost(`${this.endpoint}`, payload);
+   }
+ 
+   editarEntrada(payload: Entrada): Observable<any>{
+    return this.httpPut(`${this.endpoint}/${payload.id}`, payload);
    }
 }
