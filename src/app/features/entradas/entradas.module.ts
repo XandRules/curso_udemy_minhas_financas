@@ -7,6 +7,7 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 import { MaterialModule } from 'src/app/shared/material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StatusPipe } from './pipes/status.pipe';
+import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 
 
 @NgModule({
@@ -20,7 +21,12 @@ import { StatusPipe } from './pipes/status.pipe';
     EntradasRoutingModule,
     MaterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxMaskDirective,
+    NgxMaskPipe
   ],
+  providers: [
+    provideNgxMask()
+  ]
 })
 export class EntradasModule { }

@@ -15,7 +15,7 @@
 
         <mat-form-field class="example-form-field">
             <mat-label>Valor</mat-label>
-            <input matInput type="text" formControlName="valor">
+            <input matInput type="text" formControlName="valor" mask="separator.2" thousandSeparator="." prefix="R$">
             <!-- <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
           <mat-icon>close</mat-icon>
         </button> -->

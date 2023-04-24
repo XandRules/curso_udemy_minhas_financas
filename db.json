@@ -67,6 +67,15 @@
       "tipo": "despesa",
       "valor": "90",
       "id": 4
+    },
+    {
+      "nome": "Reforma",
+      "categoriaId": 1,
+      "data": "24-04-2023",
+      "pago": true,
+      "tipo": "despesa",
+      "valor": 789,
+      "id": 5
     }
   ]
 }
