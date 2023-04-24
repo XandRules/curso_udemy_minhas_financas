@@ -1,29 +1,36 @@
-<h1 class="title" >Minhas Finanças</h1>
-<div class="flex header">
+<h1 class="title">Minhas Finanças</h1>
 
-    <div >
+<form [formGroup]="formDashboard">
+    <div class="flex header">
+        <div>
 
-        <mat-form-field appearance="fill" class="input-item">
-            <mat-label>Mês</mat-label>
-            <mat-select>
-              <mat-option>Selecione o mês</mat-option>
-              <mat-option *ngFor="let mes of meses" [value]="mes.value">{{mes.viewValue}}</mat-option>
-            </mat-select>
-          </mat-form-field>
+            <mat-form-field appearance="fill" class="input-item">
+                <mat-label>Mês</mat-label>
+                <mat-select formControlName="mes">
+                    <mat-option>Selecione o mês</mat-option>
+                    <mat-option *ngFor="let mes of meses" [value]="mes.value">{{mes.viewValue}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div>
+
+            <mat-form-field appearance="fill" class="input-item">
+                <mat-label>Ano</mat-label>
+                <mat-select formControlName="ano">
+                    <mat-option value="2023">2023</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <button class="input-item" mat-raised-button color="primary" 
+        [disabled]="formDashboard.invalid"
+        (click)="getEntradas()" >buscar</button>
     </div>
-
-    <div >
-        
-        <mat-form-field appearance="fill" class="input-item">
-          <mat-label>Ano</mat-label>
-          <mat-select>
-            <mat-option value="2023" >2023</mat-option>
-          </mat-select>
-        </mat-form-field>
-    </div>
+</form>
 
 
-</div>
+
 
 <div class="flex card-item">
 
@@ -35,12 +42,12 @@
                     Receitas
                 </mat-card-title>
             </mat-card-header>
-        
+
             <mat-card-content class="center conteudo">
                 {{receita | currency: 'BRL'}}
             </mat-card-content>
         </mat-card>
-        
+
     </div>
 
     <div class="flex-item">
@@ -51,12 +58,12 @@
                     Despesas
                 </mat-card-title>
             </mat-card-header>
-        
+
             <mat-card-content class="center conteudo">
                 {{despesa | currency: 'BRL'}}
             </mat-card-content>
         </mat-card>
-        
+
     </div>
 
     <div class="flex-item">
@@ -67,13 +74,13 @@
                     Saldo
                 </mat-card-title>
             </mat-card-header>
-        
+
             <mat-card-content class="center conteudo">
                 {{saldo | currency: 'BRL'}}
             </mat-card-content>
         </mat-card>
-        
+
     </div>
 
-    
+
 </div>

@@ -36,7 +36,7 @@
       "nome": "Aluguel",
       "categoriaId": 1,
       "data": "17-06-2023",
-      "pago": true,
+      "pago": false,
       "tipo": "despesa",
       "valor": "1490",
       "id": 1
@@ -58,6 +58,15 @@
       "tipo": "receita",
       "valor": "3000",
       "id": 3
+    },
+    {
+      "nome": "Gas de cozinha",
+      "categoriaId": 1,
+      "data": "17-04-2023",
+      "pago": true,
+      "tipo": "despesa",
+      "valor": "90",
+      "id": 4
     }
   ]
 }

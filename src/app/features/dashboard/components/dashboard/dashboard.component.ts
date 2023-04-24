@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DashboardService } from '../../service/dashboard.service';
 import { Entrada } from './models/entrada.model';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-dashboard',
@@ -29,16 +30,41 @@ export class DashboardComponent implements OnInit{
   despesa = 0;
   receita = 0;
 
-  constructor(private dashboardService: DashboardService) {
+  formDashboard!: FormGroup;
+
+  constructor(private dashboardService: DashboardService,
+    private formBuilder: FormBuilder) {
 
   }
 
   ngOnInit(): void {
-    this.dashboardService.getEntradas()
+    this.criarFormulario();
+  }
+
+  getEntradas(){
+
+    this.entradas = [];
+  this.saldo = 0;
+  this.despesa = 0;
+  this.receita = 0;
+
+    const payload = {
+      mes: this.formDashboard.controls['mes'].value + 1,
+      ano: this.formDashboard.controls['ano'].value
+    }
+
+    this.dashboardService.getEntradas(payload)
     .subscribe(entradas => {
       this.entradas = entradas;
       this.getReceitas();
       this.getSaldo();
+    })
+  }
+
+  criarFormulario(){
+    this.formDashboard = this.formBuilder.group({
+      mes: ['', Validators.required],
+      ano: ['', Validators.required]
     })
   }
 
