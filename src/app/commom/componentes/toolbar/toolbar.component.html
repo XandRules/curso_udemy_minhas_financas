@@ -6,7 +6,7 @@
     <div class="menu-item" *ngFor="let m of menu">
         <a [routerLink]="m.rota" routerLinkActive="active">{{m.descricao}}</a>
     </div>
-    <div class="menu-item">
+    <div class="menu-item" style="cursor: pointer;">
         <a (click)="sair()">Sair</a>
     </div>
 </mat-toolbar>
