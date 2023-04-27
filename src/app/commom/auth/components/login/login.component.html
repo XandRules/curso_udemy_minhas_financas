@@ -3,24 +3,40 @@
 
     <h1>Entrar no Minhas Finanças</h1>
 
-    <form class="example-form">
+    <form class="example-form" [formGroup]="loginForm">
         <mat-form-field class="example-full-width">
           <mat-label>Email</mat-label>
-          <input type="email" matInput  placeholder="Ex. teste@teste.com">
-          <mat-error >
-            Email is <strong>required</strong>
+          <input type="email" matInput  placeholder="Ex. teste@teste.com" formControlName="email">
+          <!-- Shown if field is empty (and touched) -->
+          <mat-error *ngIf="loginForm.controls['email'].hasError('required')">
+            E-mail é obrigatório
           </mat-error>
+
+          <!-- Shown if value is not an e-mail address -->
+          <mat-error *ngIf="loginForm.controls['email'].hasError('email')">
+            e-mail inválido
+          </mat-error>
+          
         </mat-form-field>
     
         <mat-form-field class="example-full-width">
           <mat-label>password</mat-label>
-          <input type="password" matInput >
-          <mat-error >
-            Email is <strong>required</strong>
-          </mat-error>
+          <input type="password" matInput formControlName="password">
+
+         
+            <mat-error *ngIf="loginForm.controls['password'].hasError('required')" >
+              Senha é obrigatório
+            </mat-error>
+
+
+          
+            <mat-error *ngIf="loginForm.controls['password'].hasError('minLength')">
+             A senha tem que ter pelo menos 4 digitos.
+            </mat-error>
+       
         </mat-form-field>
 
-        <button mat-raised-button color="primary">Entrar</button>
+        <button mat-raised-button color="primary" (click)="login()">Entrar</button>
       </form>
 </div>
 

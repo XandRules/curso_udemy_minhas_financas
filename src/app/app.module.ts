@@ -11,6 +11,7 @@ import { MaterialModule } from './shared/material/material.module';
 import { LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
+import { AuthGuard } from './commom/auth.guard';
 
 registerLocaleData(localePt);
 
@@ -28,6 +29,7 @@ registerLocaleData(localePt);
     MaterialModule
   ],
   providers: [
+    AuthGuard,
     {
       provide: LOCALE_ID,
       useValue: 'pt-PT'
