@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "jest --verbose",
     "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "test:ci": "jest --runInBand"
   },
   "private": true,
