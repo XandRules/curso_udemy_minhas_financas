@@ -30,7 +30,7 @@ export class DashboardComponent implements OnInit{
   despesa = 0;
   receita = 0;
 
-  formDashboard!: FormGroup;
+  formDashboard: FormGroup = new FormGroup({});
 
   constructor(private dashboardService: DashboardService,
     private formBuilder: FormBuilder) {
