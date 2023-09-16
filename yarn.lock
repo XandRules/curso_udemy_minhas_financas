@@ -116,10 +116,10 @@
     "ora" "5.4.1"
     "rxjs" "6.6.7"
 
-"@angular/animations@^15.0.0 || ^16.0.0", "@angular/animations@^15.2.0", "@angular/animations@15.2.6":
-  "integrity" "sha512-2fEhhj7xTzWHD61B502eXwDclsurkOK7CU+iRdl8EAtEobLRt62sG/XHmJ71UaaniWyI/H0sUSEJuF8TIPcaoQ=="
-  "resolved" "https://registry.npmjs.org/@angular/animations/-/animations-15.2.6.tgz"
-  "version" "15.2.6"
+"@angular/animations@^15.0.0 || ^16.0.0", "@angular/animations@^15.2.9", "@angular/animations@15.2.9":
+  "integrity" "sha512-GQujLhI0cQFcl4Q8y0oSYKSRnW23GIeSL+Arl4eFufziJ9hGAAQNuesaNs/7i+9UlTHDMkPH3kd5ScXuYYz6wg=="
+  "resolved" "https://registry.npmjs.org/@angular/animations/-/animations-15.2.9.tgz"
+  "version" "15.2.9"
   dependencies:
     "tslib" "^2.3.0"
 
@@ -156,17 +156,17 @@
     "symbol-observable" "4.0.0"
     "yargs" "17.6.2"
 
-"@angular/common@^15.0.0", "@angular/common@^15.0.0 || ^16.0.0", "@angular/common@^15.2.0", "@angular/common@>=14.0.0", "@angular/common@15.2.6", "@angular/common@5.0.0-alpha - 5 || 6.0.0-alpha - 6 || 7.0.0-alpha - 7 || 8.0.0-alpha - 8 || 9.0.0-alpha - 9 || 10.0.0-alpha - 10 || 11.0.0-alpha - 11 || 12.0.0-alpha - 12 || 13.0.0-alpha - 13 || 14.0.0-alpha - 14 || 15.0.0-alpha - 15 || 16.0.0-alpha - 16":
-  "integrity" "sha512-kPGJoSkFPXsIeHzcjlal8JC8/jYK9qAr+wv+HDX8O1J2FEzQjwoX4SYvpnvVk5WTqUkxMkRCTMu2YFAAmU1+qg=="
-  "resolved" "https://registry.npmjs.org/@angular/common/-/common-15.2.6.tgz"
-  "version" "15.2.6"
+"@angular/common@^15.0.0", "@angular/common@^15.0.0 || ^16.0.0", "@angular/common@^15.2.9", "@angular/common@>=14.0.0", "@angular/common@15.2.9", "@angular/common@5.0.0-alpha - 5 || 6.0.0-alpha - 6 || 7.0.0-alpha - 7 || 8.0.0-alpha - 8 || 9.0.0-alpha - 9 || 10.0.0-alpha - 10 || 11.0.0-alpha - 11 || 12.0.0-alpha - 12 || 13.0.0-alpha - 13 || 14.0.0-alpha - 14 || 15.0.0-alpha - 15 || 16.0.0-alpha - 16":
+  "integrity" "sha512-LM9/UHG2dRrOzlu2KovrFwWIziFMjRxHzSP3Igw6Symw/wIl0kXGq8Fn6RpFP78zmLqnv+IQOoRiby9MCXsI4g=="
+  "resolved" "https://registry.npmjs.org/@angular/common/-/common-15.2.9.tgz"
+  "version" "15.2.9"
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/compiler-cli@^15.0.0", "@angular/compiler-cli@^15.2.0", "@angular/compiler-cli@>=13.0.0 <17.0.0":
-  "integrity" "sha512-GHwL4l+NkaUGGdypF+nMFWCmTqvGusTzIriIwpnp38wc8lpmVME2jVodB6sHAkrxFmaHXU/gOCDFK4AnOi6Gmw=="
-  "resolved" "https://registry.npmjs.org/@angular/compiler-cli/-/compiler-cli-15.2.6.tgz"
-  "version" "15.2.6"
+"@angular/compiler-cli@^15.0.0", "@angular/compiler-cli@^15.2.9", "@angular/compiler-cli@>=13.0.0 <17.0.0":
+  "integrity" "sha512-zsbI8G2xHOeYWI0hjFzrI//ZhZV9il/uQW5dAimfwJp06KZDeXZ3PdwY9JQslf6F+saLwOObxy6QMrIVvfjy9w=="
+  "resolved" "https://registry.npmjs.org/@angular/compiler-cli/-/compiler-cli-15.2.9.tgz"
+  "version" "15.2.9"
   dependencies:
     "@babel/core" "7.19.3"
     "@jridgewell/sourcemap-codec" "^1.4.14"
@@ -179,24 +179,24 @@
     "tslib" "^2.3.0"
     "yargs" "^17.2.1"
 
-"@angular/compiler@^15.2.0", "@angular/compiler@15.2.6":
-  "integrity" "sha512-6oBAIY5KcC1UNsrnWGLcopZ9RD7c0HzpTCQY46N6HytHtUjBvzLbGWZu5MfahPtIjKz9FMVYBX9hugcbVpWnTA=="
-  "resolved" "https://registry.npmjs.org/@angular/compiler/-/compiler-15.2.6.tgz"
-  "version" "15.2.6"
+"@angular/compiler@^15.2.9", "@angular/compiler@15.2.9":
+  "integrity" "sha512-MoKugbjk+E0wRBj12uvIyDLELlVLonnqjA2+XiF+7FxALIeyds3/qQeEoMmYIqAbN3NnTT5pV92RxWwG4tHFwA=="
+  "resolved" "https://registry.npmjs.org/@angular/compiler/-/compiler-15.2.9.tgz"
+  "version" "15.2.9"
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/core@^15.0.0", "@angular/core@^15.0.0 || ^16.0.0", "@angular/core@^15.2.0", "@angular/core@>=13.0.0 <17.0.0", "@angular/core@>=14.0.0", "@angular/core@15.2.6", "@angular/core@5.0.0-alpha - 5 || 6.0.0-alpha - 6 || 7.0.0-alpha - 7 || 8.0.0-alpha - 8 || 9.0.0-alpha - 9 || 10.0.0-alpha - 10 || 11.0.0-alpha - 11 || 12.0.0-alpha - 12 || 13.0.0-alpha - 13 || 14.0.0-alpha - 14 || 15.0.0-alpha - 15 || 16.0.0-alpha - 16":
-  "integrity" "sha512-eN46OfSOLQGN6AciUvyHOJ8xQxmiEakkxJeoG1jwcSRXCjwSYYnQ/6drnhUpq5p43XXBAIduKfJXNztEPvLAkA=="
-  "resolved" "https://registry.npmjs.org/@angular/core/-/core-15.2.6.tgz"
-  "version" "15.2.6"
+"@angular/core@^15.0.0", "@angular/core@^15.0.0 || ^16.0.0", "@angular/core@^15.2.9", "@angular/core@>=13.0.0 <17.0.0", "@angular/core@>=14.0.0", "@angular/core@15.2.9", "@angular/core@5.0.0-alpha - 5 || 6.0.0-alpha - 6 || 7.0.0-alpha - 7 || 8.0.0-alpha - 8 || 9.0.0-alpha - 9 || 10.0.0-alpha - 10 || 11.0.0-alpha - 11 || 12.0.0-alpha - 12 || 13.0.0-alpha - 13 || 14.0.0-alpha - 14 || 15.0.0-alpha - 15 || 16.0.0-alpha - 16":
+  "integrity" "sha512-w46Z1yUXCQfKV7XfnamOoLA2VD0MVUUYVrUjO73mHSskDXSXxfZAEHO9kfUS71Cj35PvhP3mbkqWscpea2WeYg=="
+  "resolved" "https://registry.npmjs.org/@angular/core/-/core-15.2.9.tgz"
+  "version" "15.2.9"
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/forms@^15.0.0 || ^16.0.0", "@angular/forms@^15.2.0", "@angular/forms@>=14.0.0", "@angular/forms@5.0.0-alpha - 5 || 6.0.0-alpha - 6 || 7.0.0-alpha - 7 || 8.0.0-alpha - 8 || 9.0.0-alpha - 9 || 10.0.0-alpha - 10 || 11.0.0-alpha - 11 || 12.0.0-alpha - 12 || 13.0.0-alpha - 13 || 14.0.0-alpha - 14 || 15.0.0-alpha - 15 || 16.0.0-alpha - 16":
-  "integrity" "sha512-SdZxsE9MUOVMz0FjOwtx1RN/SGpObnAyZBqXNrN0c4BmJg+faJzvKIBBN102CKpWZOGRoq2YYrgxow9StMhxTw=="
-  "resolved" "https://registry.npmjs.org/@angular/forms/-/forms-15.2.6.tgz"
-  "version" "15.2.6"
+"@angular/forms@^15.0.0 || ^16.0.0", "@angular/forms@^15.2.9", "@angular/forms@>=14.0.0", "@angular/forms@5.0.0-alpha - 5 || 6.0.0-alpha - 6 || 7.0.0-alpha - 7 || 8.0.0-alpha - 8 || 9.0.0-alpha - 9 || 10.0.0-alpha - 10 || 11.0.0-alpha - 11 || 12.0.0-alpha - 12 || 13.0.0-alpha - 13 || 14.0.0-alpha - 14 || 15.0.0-alpha - 15 || 16.0.0-alpha - 16":
+  "integrity" "sha512-sk0pC2EFi2Ohg5J0q0NYptbT+2WOkoiERSMYA39ncDvlSZBWsNlxpkbGUSck7NIxjK2QfcVN1ldGbHlZTFvtqg=="
+  "resolved" "https://registry.npmjs.org/@angular/forms/-/forms-15.2.9.tgz"
+  "version" "15.2.9"
   dependencies:
     "tslib" "^2.3.0"
 
@@ -254,24 +254,24 @@
     "@material/typography" "15.0.0-canary.684e33d25.0"
     "tslib" "^2.3.0"
 
-"@angular/platform-browser-dynamic@^15.2.0", "@angular/platform-browser-dynamic@>=13.0.0 <17.0.0":
-  "integrity" "sha512-ZSyiigpxBWIM5f8t/a28Y3BCzHn1FtI2KsJysE7di5UUflOzwbxbfycVlpiZp0girbDYRyF18vvefvitNh17Gw=="
-  "resolved" "https://registry.npmjs.org/@angular/platform-browser-dynamic/-/platform-browser-dynamic-15.2.6.tgz"
-  "version" "15.2.6"
+"@angular/platform-browser-dynamic@^15.2.9", "@angular/platform-browser-dynamic@>=13.0.0 <17.0.0":
+  "integrity" "sha512-ZIYDM6MShblb8OyV1m4+18lJJ2LCeICmeg2uSbpFYptYBSOClrTiYOOFVDJvn7HLvNzljLs16XPrgyaYVqNpcw=="
+  "resolved" "https://registry.npmjs.org/@angular/platform-browser-dynamic/-/platform-browser-dynamic-15.2.9.tgz"
+  "version" "15.2.9"
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/platform-browser@^15.0.0 || ^16.0.0", "@angular/platform-browser@^15.2.0", "@angular/platform-browser@15.2.6", "@angular/platform-browser@5.0.0-alpha - 5 || 6.0.0-alpha - 6 || 7.0.0-alpha - 7 || 8.0.0-alpha - 8 || 9.0.0-alpha - 9 || 10.0.0-alpha - 10 || 11.0.0-alpha - 11 || 12.0.0-alpha - 12 || 13.0.0-alpha - 13 || 14.0.0-alpha - 14 || 15.0.0-alpha - 15 || 16.0.0-alpha - 16":
-  "integrity" "sha512-8afckDEWfYf+cyxs2SboZBJkiCwFgYE8IH24RUW1t3zLC+wfrTr7UEfrCoD4YJRVJdqnPoRWN5gjz98n3n4zsA=="
-  "resolved" "https://registry.npmjs.org/@angular/platform-browser/-/platform-browser-15.2.6.tgz"
-  "version" "15.2.6"
+"@angular/platform-browser@^15.0.0 || ^16.0.0", "@angular/platform-browser@^15.2.9", "@angular/platform-browser@15.2.9", "@angular/platform-browser@5.0.0-alpha - 5 || 6.0.0-alpha - 6 || 7.0.0-alpha - 7 || 8.0.0-alpha - 8 || 9.0.0-alpha - 9 || 10.0.0-alpha - 10 || 11.0.0-alpha - 11 || 12.0.0-alpha - 12 || 13.0.0-alpha - 13 || 14.0.0-alpha - 14 || 15.0.0-alpha - 15 || 16.0.0-alpha - 16":
+  "integrity" "sha512-ufCHeSX+U6d43YOMkn3igwfqtlozoCXADcbyfUEG8m2y9XASobqmCKvdSk/zfl62oyiA8msntWBJVBE2l4xKXg=="
+  "resolved" "https://registry.npmjs.org/@angular/platform-browser/-/platform-browser-15.2.9.tgz"
+  "version" "15.2.9"
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/router@^15.2.0":
-  "integrity" "sha512-yB9uc9Xi9N0dErsugleywBA1KYG+GQ9WWSlri34oe2VsCqZazImn71n4wKPtrm2Xiy/mI23wJcr+jiCAtzp49Q=="
-  "resolved" "https://registry.npmjs.org/@angular/router/-/router-15.2.6.tgz"
-  "version" "15.2.6"
+"@angular/router@^15.2.9":
+  "integrity" "sha512-UCbh5DLSDhybv0xKYT7kGQMfOVdyhHIHOZz5EYVebbhste6S+W1LE57vTHq7QtxJsyKBa/WSkaUkCLXD6ntCAg=="
+  "resolved" "https://registry.npmjs.org/@angular/router/-/router-15.2.9.tgz"
+  "version" "15.2.9"
   dependencies:
     "tslib" "^2.3.0"
 

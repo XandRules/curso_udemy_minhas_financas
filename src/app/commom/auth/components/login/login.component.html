@@ -36,7 +36,7 @@
        
         </mat-form-field>
 
-        <button mat-raised-button color="primary" (click)="login()">Entrar</button>
+        <button mat-raised-button color="primary" (click)="login()" [disabled]="loginForm.invalid">Entrar</button>
       </form>
 </div>
 
