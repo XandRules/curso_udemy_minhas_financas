@@ -6,7 +6,7 @@
     <form class="example-form" [formGroup]="loginForm">
         <mat-form-field class="example-full-width">
           <mat-label>Email</mat-label>
-          <input type="email" matInput  placeholder="Ex. teste@teste.com" formControlName="email">
+          <input type="email" matInput  placeholder="Ex. teste@teste.com" formControlName="email" id="email">
           <!-- Shown if field is empty (and touched) -->
           <mat-error *ngIf="loginForm.controls['email'].hasError('required')">
             E-mail é obrigatório
@@ -21,7 +21,7 @@
     
         <mat-form-field class="example-full-width">
           <mat-label>password</mat-label>
-          <input type="password" matInput formControlName="password">
+          <input type="password" matInput formControlName="password" id="password">
 
          
             <mat-error *ngIf="loginForm.controls['password'].hasError('required')" >
