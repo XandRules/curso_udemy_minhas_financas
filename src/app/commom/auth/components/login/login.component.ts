@@ -39,16 +39,17 @@ export class LoginComponent implements OnInit{
     this.authLogin.email = this.authLogin.email.toLowerCase();
 
     console.log(this.authLogin)
+    
+    this.router.navigateByUrl('dashboard');
 
-    this.authenticationService.login({email: this.authLogin.email, password: this.authLogin.password})
-    .subscribe((user) => {
-      if(user?.id){
-        this.router.navigateByUrl('dashboard');
-      }
-    },(error) => {
-        this._snackBar.open('Ocorreu um erro no Login!');
-    }
-    );
+    // this.authenticationService.login({email: this.authLogin.email, password: this.authLogin.password})
+    // .subscribe((user) => {
+    //   if(user?.id){
+    //   }
+    // },(error) => {
+    //     this._snackBar.open('Ocorreu um erro no Login!');
+    // }
+    // );
 
   }
 

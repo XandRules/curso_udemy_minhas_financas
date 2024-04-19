@@ -1,45 +1,40 @@
 {
   "categorias": [
     {
-      "id": 1,
       "nome": "Moradia",
-      "descricao": "Pagamentos de Contas da Casa"
+      "descricao": "Pagamentos de Contas da Casa",
+      "id": "1"
     },
     {
-      "id": 2,
+      "id": "2",
       "nome": "Saúde",
       "descricao": "Plano de Saúde e Remédios"
     },
     {
-      "id": 3,
+      "id": "3",
       "nome": "Lazer",
       "descricao": "Cinema, parques, praia, etc"
     },
     {
-      "id": 4,
+      "id": "4",
       "nome": "Salário",
       "descricao": "Recebimento de Salário"
     },
     {
-      "nome": "Freelas",
-      "descricao": "Recebimento de serviço",
-      "id": 5
-    },
-    {
-      "nome": "Férias",
-      "descricao": "Recebimento de férias",
-      "id": 6
+      "id": "fc0b",
+      "nome": "Frellas",
+      "descricao": "Pagamento de serviço prestado"
     }
   ],
   "entradas": [
     {
       "nome": "Aluguel",
-      "categoriaId": 1,
+      "categoriaId": "1",
       "data": "17-06-2023",
       "pago": false,
       "tipo": "despesa",
       "valor": "1490",
-      "id": 1
+      "id": "1"
     },
     {
       "nome": "Video game",
@@ -48,16 +43,16 @@
       "pago": true,
       "tipo": "despesa",
       "valor": "345",
-      "id": 2
+      "id": "2"
     },
     {
       "nome": "Salario",
-      "categoriaId": 4,
+      "categoriaId": "3",
       "data": "17-04-2023",
       "pago": true,
       "tipo": "receita",
       "valor": "3000",
-      "id": 3
+      "id": "3"
     },
     {
       "nome": "Gas de cozinha",
@@ -66,7 +61,7 @@
       "pago": true,
       "tipo": "despesa",
       "valor": "90",
-      "id": 4
+      "id": "4"
     },
     {
       "nome": "Reforma",
@@ -75,7 +70,16 @@
       "pago": true,
       "tipo": "despesa",
       "valor": 789,
-      "id": 5
+      "id": "5"
+    },
+    {
+      "id": "8666",
+      "nome": "Conserto Carro",
+      "categoriaId": "fc0b",
+      "data": "18-04-2024",
+      "pago": true,
+      "tipo": "despesa",
+      "valor": 500
     }
   ]
 }
