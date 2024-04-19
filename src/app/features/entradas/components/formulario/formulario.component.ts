@@ -41,13 +41,21 @@ export class FormularioComponent implements OnInit{
 
   }
   
+  // ngOnInit -> executa apenas uma vez quando o componente é iniciado
+  // ngOnChanges -> executa na criação e toda vez que um bind é alterado
+  // ngOnViewInit -> roda antes do OnInit quando os componetes de tela é montado
+  // ngAfterViewInit -> roda depois do ngOnInit quando toda a tela ja esta disponivel no browser
+  // ngOnDestroy -> executado quando o seu componente é removido do DOM
+
+
+
   ngOnInit(): void {
     this.criarFormulario();
 
-    this.rota = this.activatedRouter.snapshot.url[0].path;
+    this.rota = this.activatedRouter.snapshot.url[0].path; // editar ou novo
 
     if(this.rota === 'editar'){
-      this.id = this.activatedRouter.snapshot.url[1].path;
+      this.id = this.activatedRouter.snapshot.url[1].path; // id da rota
 
       this.buscarEntradaPeloId();
     }

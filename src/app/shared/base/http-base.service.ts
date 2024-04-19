@@ -9,7 +9,7 @@ export class HttpBaseService {
 
   private readonly httpClient!: HttpClient;
 
-  private apiBase = 'http://localhost:3000/';
+  private apiBase = 'http://localhost:3000/'; // caminho para a api
 
   constructor(protected readonly injector: Injector) { 
     if(injector == null || injector == undefined){
